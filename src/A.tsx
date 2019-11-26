@@ -4,12 +4,12 @@ import { useContext } from "react";
 import { aStyle } from "./styles";
 
 const CtxConsumer = () => {
-  const { value, setValue } = useContext(SimpleCtx);
+  const { valueA, setValueA } = useContext(SimpleCtx);
   return (
     <div style={aStyle}>
       <h2>Component A</h2>
-      <div>value: {value}</div>
-      <input value={value} onChange={e => setValue(e.target.value)} />
+      <div>value: {valueA}</div>
+      <input value={valueA} onChange={e => setValueA(e.target.value)} />
     </div>
   );
 };
