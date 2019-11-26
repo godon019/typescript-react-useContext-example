@@ -1,15 +1,16 @@
 import * as React from "react";
 import { render } from "react-dom";
 
-import "./styles.css";
-import CtxProvider from "./CtxProvider";
-import CtxConsumer from "./CtxConsumer";
+import CtxProvider from "./Context";
+import A from "./A";
+import B from "./B";
 
 function App() {
   return (
     <div className="App">
       <CtxProvider>
-        <CtxConsumer />
+        <A />
+        <B />
       </CtxProvider>
     </div>
   );
